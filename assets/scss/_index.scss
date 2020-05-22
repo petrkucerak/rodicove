@@ -143,3 +143,38 @@ canvas{
     z-index: -5;
     
 }
+
+.choose{
+
+    height: 60vh;
+    width: 90vw;
+    max-width: 800px;
+
+    @include flexbox{
+
+        flex-direction: row;
+        justify-content: space-evenly;
+    };
+
+    @include for-size('tablet'){
+
+        @include flexbox{
+
+            flex-direction: column;
+        };
+
+        height: 100vh;
+    };
+
+    button{
+
+        background: none;
+        border: 3px black solid;
+        border-radius: 10px;
+        outline: none;
+        font-size: 3rem;
+        font-family: 'Dancing Script', cursive;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+}
